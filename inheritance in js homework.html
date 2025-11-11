@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <h2>javascript class inheritance homework</h2>
+        <p>Use the "extends"hi my name is esther.</p>
+        <p>i love the color purple.</p>
+        <p id="details"></p>
+        <script>
+            class Car{
+                constructor(brand){
+                    this.carmane=brand;
+                }
+                present(){
+                    return "i have a "+ this.carmane;
+                }
+            }
+            class Model extends Car {
+
+                    constructor(brand, mod) {
+
+                        super(brand);
+
+                        this.model = mod;
+
+                    }
+
+                    show() {
+
+                        return this.present() + ', i have ' + this.model;
+
+                    }
+
+                }
+
+                let myCar = new Model("a mom and dad ", "and sisters");
+
+                document.getElementById("details").innerHTML = myCar.show();
+        </script>
+    </body>
+</html>
